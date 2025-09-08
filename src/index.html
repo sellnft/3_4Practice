@@ -92,29 +92,38 @@
         .mainContent {
             display: flex;
             height: 587px;
-            background-color: aqua;
+            background-color:rgb(80, 156, 255);
         }
         .mainTitle {
-            flex: 1;
-            margin-left: 10px;
-            border: 1px solid;
+            margin-left: 50px;
             position: relative;
+            margin-right:-310px;
         }
         .good-card {
             display: flex;
             flex-direction: column;
             width: 200px;
             gap: 10px;
+            align-items: center;
         }
         .content-table {
-            border: 3px solid black;
-            height: 300px;
+            height: 250px;
             position: relative;
-            margin-top: 200px;
+            margin-top: 70px;
             table-layout: fixed;
         }
         .g {
             border: 3px solid black;
+            background-color: azure;
+        }
+        .good-text {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            gap: 10px;
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -150,30 +159,39 @@
             <label><a href="#">Навигация по странице</a></label>
         </div>
         <div class="firstSemAside">
-            <label><a href="#">Первый семестр</a></label>
+            <label><a href="#">Фронтенд</a></label>
         </div>
         <div class="secondSemAside">
-            <label><a href="#">Второй семестр</a></label>
+            <label><a href="#">Бэкенд</a></label>
         </div>
     </aside>
-    <div class="mainTitle">
-        <h1>Разработка веб-приложений</h1>
-    </div>
+    <h2 class="mainTitle">Разработка веб-приложений</h2>
     <table class="content-table">
         <td class="g">
             <article class="good-card">
                 <img src="../assets/card1.png" width="100">
-                <label>Сайт-визитка</label>
+                <div class="good-text">
+                    <label>Сайт-визитка</label>
+                    <button type="button">Заказать</button>
+                </div>
             </article>
         </td>
-        <td>
+        <td class="g">
             <article class="good-card">
-                <label>Корпоративный сайт</label>
+                <img src="../assets/card2.png" width="100">
+                <div class="good-text">
+                    <label>Корпоративный сайт</label>
+                    <button type="button">Заказать</button>
+                </div>
             </article>
         </td>
-        <td>
+        <td class="g">
             <article class="good-card">
-                <label>Интернет-магазин</label>
+                <img src="../assets/card3.png" width="100">
+                <div class="good-text">
+                    <label>Интернет-магазин</label>
+                    <button type="button">Заказать</button>
+                </div>
             </article>
         </td>
     </table>
