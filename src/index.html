@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <meta name="description" content="Это главная страница нашего сайта">
+    <style>
+        .header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: wheat;
+            top: 0;
+            left: 0;
+            position: relative;
+        }
+        .infoMe {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 7px;
+            padding-right: 70px;
+
+        }
+        .displayBlock {
+            display: block;
+        }
+        .padding-left-1000 {
+            padding-left: 1000px;
+        }
+        body {
+            margin: 0;
+        }
+        .footer {
+            background-color: wheat;
+            bottom: 0;
+            position: absolute;
+            display: flex;
+            margin-top: 655px;
+            width: 100%;
+            height: 70px;
+        }
+        .infoMeFooter {
+            position: relative;
+            padding-left: 630px;
+            align-self: center;
+        }
+        .navigation {
+            display: flex;
+            background-color: cadetblue;
+            height: 70px;
+            align-items: center;
+        }
+        .toMainPage {
+            padding-left: 20px;
+        }
+        .firstSem {
+            padding-left: 20px;
+        }
+        .secondSem {
+            padding-left: 20px;
+        }
+        .services {
+            padding-left: 20px;
+        }
+        .authorization {
+            padding-left: 20px;
+        }
+        .aside {
+            background-color:rgb(42, 165, 130);
+            height: 587px;
+            margin-right:1250px;
+            display: flex;
+            flex-direction: column;
+        }
+        .pageNavigation {
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        .firstSemAside {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .secondSemAside {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        main {
+            background-color: aqua;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="../assets/x_logo.ico">
+        <div class="infoMe">
+            <label>Группа ЭФБО-06-24</label>
+            <label>Рахманинов Савва Сергеевич</label>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="toMainPage">
+            <label><a href="#">Главная</a></label>
+        </div>
+        <div class="firstSem">
+            <label><a href="#">Первый семестр</a></label>
+        </div>
+        <div class="secondSem">
+            <label><a href="#">Второй семестр</a></label>
+        </div>
+        <div class="services">
+            <label><a href="#">Услуги</a></label>
+        </div>
+        <div class="authorization">
+            <label><a href="#">Авторизация</a></label>
+        </div>
+    </nav>
+    <aside class="aside">
+        <div class="pageNavigation">
+            <label><a href="#">Навигация по странице</a></label>
+        </div>
+        <div class="firstSemAside">
+            <label><a href="#">Первый семестр</a></label>
+        </div>
+        <div class="secondSemAside">
+            <label><a href="#">Второй семестр</a></label>
+        </div>
+    </aside>
+    <p>Hello!</p>
+    <footer class="footer">
+        <div class="infoMeFooter">
+            <label>&copy; Рахманинов Савва Сергеевич, 2025</label>
+        </div>
+    </footer>
+</body>
+</html>
