@@ -72,9 +72,10 @@
         .aside {
             background-color:rgb(42, 165, 130);
             height: 587px;
-            margin-right:1250px;
+            width: 200px;
             display: flex;
             flex-direction: column;
+            padding-right: 20px;
         }
         .pageNavigation {
             margin-top: 15px;
@@ -88,13 +89,37 @@
             margin-top: 5px;
             margin-left: 10px;
         }
-        main {
+        .mainContent {
+            display: flex;
+            height: 587px;
             background-color: aqua;
-            margin-left: 200px;
+        }
+        .mainTitle {
+            flex: 1;
+            margin-left: 10px;
+            border: 1px solid;
+            position: relative;
+        }
+        .good-card {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 10px;
+        }
+        .content-table {
+            border: 3px solid black;
+            height: 300px;
+            position: relative;
+            margin-top: 200px;
+            table-layout: fixed;
+        }
+        .g {
+            border: 3px solid black;
         }
     </style>
 </head>
 <body>
+<main>
     <header class="header">
         <img src="../assets/x_logo.ico">
         <div class="infoMe">
@@ -119,6 +144,7 @@
             <label><a href="#">Авторизация</a></label>
         </div>
     </nav>
+    <div class="mainContent">
     <aside class="aside">
         <div class="pageNavigation">
             <label><a href="#">Навигация по странице</a></label>
@@ -130,11 +156,33 @@
             <label><a href="#">Второй семестр</a></label>
         </div>
     </aside>
-    <p>Hello!</p>
+    <div class="mainTitle">
+        <h1>Разработка веб-приложений</h1>
+    </div>
+    <table class="content-table">
+        <td class="g">
+            <article class="good-card">
+                <img src="../assets/card1.png" width="100">
+                <label>Сайт-визитка</label>
+            </article>
+        </td>
+        <td>
+            <article class="good-card">
+                <label>Корпоративный сайт</label>
+            </article>
+        </td>
+        <td>
+            <article class="good-card">
+                <label>Интернет-магазин</label>
+            </article>
+        </td>
+    </table>
+    </div>
     <footer class="footer">
         <div class="infoMeFooter">
             <label>&copy; Рахманинов Савва Сергеевич, 2025</label>
         </div>
     </footer>
+</main>
 </body>
 </html>
