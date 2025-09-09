@@ -5,8 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <meta name="description" content="Здесь вы можете зарегистрироваться на нашем сайте">
+    <style>
+        body {
+            margin: 0;
+        }
+        .registerTitle {
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+        .content-wrapper {
+            border: 1px solid;
+            width: 55%;
+            margin-top: 50px;
+            margin-left: 380px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-text {
+            margin-top: 20px;
+            margin-left: 40px;
+            font-size: large;
+            font-weight: bold;
+        }
+        .name-input {
+            margin-left: 40px;
+            margin-top: 70px;
+        }
+        .borderInput {
+            border: 2px solid;
+        }
+        .marginTopInput {
+            margin-top: 10px;
+        }
+        .email-input {
+            margin-left: 40px;
+        }
+        .emailInput {
+            margin-left: 16px;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <div class="content-wrapper">
+            <h2 class="registerTitle">Разработка веб-приложений</h2>
+            <div class="form-text">
+            <label>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</label>
+            </div>
+            <div class="name-input">
+                <form action="/submit" method="POST">
+                    <label for="name">Как вас зовут</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя" class="borderInput">
+                </form>
+            </div>
+            <div class="email-input marginTopInput">
+                <form action="/submit" method="POST">
+                    <label for="user_email">Ваш e-mail</label>
+                    <input type="email" id="user_email" name="user_email" required placeholder="example@mail.ru" class="borderInput emailInput">
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
